@@ -186,6 +186,7 @@ div.container{
   margin-top: 15px;
   border-radius: 5px;
   list-style-type: none;
+  text-decoration: none;
 }
 #pcPackage .column:hover{
   color: black;
