@@ -114,6 +114,10 @@ body{
     top: 0;
   }
 
+  #home{
+    margin-top: 26vw;
+  }
+
   #pcPackage h3{
     font-size: 19px;
   }
@@ -145,7 +149,7 @@ div.container{
 }
 
 #home{
-  padding-top: 15%;
+  padding-top: 5vw;
   text-align: center;
 }
 #home h1{
