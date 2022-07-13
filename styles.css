@@ -200,6 +200,21 @@ div.container{
   border-radius: 10px;
   transition-duration: 0.3s;
 }
+#pcPackage .column:active{
+  color: black;
+  background-image: none;
+  background-color: #50BFE6;
+  transition-duration: 0.4s;
+}
+#pcPackage ul:active{
+  color: wheat;
+  background-color: black;
+  border-radius: 10px;
+  transition-duration: 0.3s;
+}
+a .pcUl{
+  text-decoration: none;
+}
 
 h1 u{
   color: black;
