@@ -163,7 +163,7 @@ div.container{
 }
 
 #pcPackage{
-  padding-top: 25%;
+  padding-top: 15%;
   text-align: center;
 }
 #pcPackage h3{
@@ -250,7 +250,7 @@ ul.pcUl{
 }
 
 #contact{
-  padding-top: 25%;
+  padding-top: 15%;
   display: inline-block;
   text-align: left;
   line-height: 3px;
@@ -264,7 +264,7 @@ ul.pcUl{
 }
 
 #about{
-  padding-top: 25%;
+  padding-top: 15%;
 }
 
 .container #help{
