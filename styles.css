@@ -232,16 +232,51 @@ h1 u{
 .row{
   display: flex;
   border-radius: 5px;
-  margin: 5px 5px 5px 5px;
+  margin: auto;
   padding: 5px 5px 5px 5px;
   background-color: black;
   height: auto;
 }
+
+
 .column{
   flex: 40%;
   padding: 5px 5px 5px 5px;
   margin: 5px 5px 5px 5px;
 }
+
+#column1{
+  color: #333;
+  border-radius: 9px;
+  background-color: white;
+}
+#column1 i{
+  margin-top: 15px;
+  font-size: 200%;
+  color: black;
+}
+#column2{
+  color: #333;
+  border-radius: 9px;
+  background-color: white;
+}
+#column2 i{
+  margin-top: 15px;
+  font-size: 200%;
+  color: black;
+}
+#column3{
+  color: #333;
+  border-radius: 9px;
+  background-color: white;
+}
+#column3 i{
+  margin-top: 15px;
+  font-size: 200%;
+  color: black;
+}
+
+
 .responsive{
   max-width: 100%;
   height: auto;
