@@ -23,8 +23,11 @@ html{
     width: 100%;
   }
   
-i{
-  padding-right: 10px;
+
+
+.column i{
+  padding-right: 0px;
+  text-align: center;
 }
 
   a:hover{
