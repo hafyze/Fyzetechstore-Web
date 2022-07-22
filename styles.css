@@ -233,9 +233,8 @@ a .pcUl{
 }
 
 h1 u{
-  color: black;
+  color: w;
   border-radius: 5px;
-  background-image: linear-gradient(to right, #ECE9E6, #D6A4A4);
 }
 .row{
   display: flex;
@@ -305,6 +304,9 @@ ul.pcUl{
 }
 #contact h4{
   text-align: center;
+  border: 3px solid wheat;
+  border-radius: 7px;
+  padding: 10px 0px 10px 0px;
 }
 #contact p{
   padding-top: 3%;
@@ -316,15 +318,20 @@ ul.pcUl{
 
 .container #help{
   padding-top: 5%;
-  color: white;
-  border-top: 1px solid white
 }
 
+hr{
+  background-color: wheat;
+}
+
+#help{
+  margin-top: 5%;
+}
 #help ul{
   display: inline-block;
   text-align: left;
-  margin: 0%;
 }
+
 .text{
   width: 50%;
   height: 50px;
