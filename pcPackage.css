@@ -5,7 +5,6 @@ html{
   
 img{
   float: center;
-  width: 60%;
   height: auto;
 }
   
@@ -120,7 +119,7 @@ body{
 }
 @media screen and (min-width: 600px) {
   .column ul{
-    margin-top: 20%;
+    margin-top: 16%;
   }
 }
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
@@ -156,7 +155,7 @@ body{
       }
 
       img{
-        width: 45%;
+        width: 75%;
         height: auto;
       }
 }
@@ -185,6 +184,7 @@ body{
   float: right;
   border-radius: 9px;
   text-align: left;
+  padding-bottom: 10%;
   padding-right: 25px;
   list-style-type: none;
 }
