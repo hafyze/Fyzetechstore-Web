@@ -17,6 +17,7 @@ nav{
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1;
 }
 
 a:hover{
@@ -232,10 +233,6 @@ a .pcUl{
   text-decoration: none;
 }
 
-h1 u{
-  color: w;
-  border-radius: 5px;
-}
 .row{
   display: flex;
   border-radius: 5px;
@@ -358,4 +355,30 @@ form u{
   margin-left: auto;
   width: auto; 
   background-image: linear-gradient(45deg,  #ECE9E6, #D6A4A4);
+}
+
+#student_pc{
+  display: block;
+  text-align: center;
+  margin-top: 10%;
+  width: fit-content;
+
+  position: relative;
+  animation: mymove 2.5s forwards;
+  animation-timing-function: ease-in;
+}
+
+#student_pc h1{
+  width: fit-content;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 10px;
+  padding: 3px 3px 0 3px;
+  border: 2px solid white;
+  border-radius: 8px;
+}
+
+@keyframes mymove {
+  from{left: -200px;}
+  to {left: 0px;}
 }

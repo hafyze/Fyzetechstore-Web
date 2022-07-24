@@ -202,6 +202,10 @@ body{
   background-image: linear-gradient(45deg, wheat, #537812);
 }
 
+footer p{
+  font-size: 10px;
+}
+
 #help{
   margin: auto;
   height: auto;
