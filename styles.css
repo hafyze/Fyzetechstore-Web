@@ -147,8 +147,8 @@ body{
     font-size: 16px;
   }
 
-  img{
-    width: auto;
+  .responsive{
+    max-width: 250px;
   }
 }
 
@@ -205,7 +205,7 @@ div.container{
 }
 
 #pc1{
-  width: 70%;
+  width: 100%;
 }
 
 #pcPackage .column:hover{
@@ -285,8 +285,6 @@ a .pcUl{
 
 
 .responsive{
-  max-width: 100%;
-  height: auto;
 }
 
 ul.pcUl{
@@ -364,7 +362,7 @@ form u{
   display: block;
   text-align: center;
   margin-top: 10%;
-  width: 50%;
+  width: fit-content;
 
   position: relative;
   animation: mymove 2.5s forwards;
