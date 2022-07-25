@@ -7,10 +7,6 @@ i{
   margin-right: 5px;
 }
 
-img{
-  width: 50%;
-}
-
 nav{
   background-color: black;
   overflow: hidden;
@@ -126,10 +122,7 @@ body{
   #pcPackage h3{
     font-size: 19px;
   }
-  #pcPackage img{
-    width: auto;
-    height: auto;
-  }
+
   .row{
     display: block;
   }
@@ -152,6 +145,10 @@ body{
   }
   #help{
     font-size: 16px;
+  }
+
+  img{
+    width: auto;
   }
 }
 
@@ -178,6 +175,8 @@ div.container{
   padding-top: 15%;
   text-align: center;
 }
+
+
 #pcPackage h3{
   color: white;
   padding: 10px 10px 5px 5px;
@@ -203,6 +202,10 @@ div.container{
   border-radius: 5px;
   list-style-type: none;
   text-decoration: none;
+}
+
+#pc1{
+  width: 70%;
 }
 
 #pcPackage .column:hover{
@@ -361,11 +364,15 @@ form u{
   display: block;
   text-align: center;
   margin-top: 10%;
-  width: fit-content;
+  width: 50%;
 
   position: relative;
   animation: mymove 2.5s forwards;
   animation-timing-function: ease-in;
+}
+
+#student_pc img{
+  width: 70%;
 }
 
 #student_pc h1{

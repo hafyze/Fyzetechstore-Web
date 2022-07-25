@@ -6,6 +6,7 @@ html{
 img{
   float: center;
   height: auto;
+  width: 50%;
 }
   
 .clearfix::after {
