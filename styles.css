@@ -123,13 +123,6 @@ body{
     font-size: 19px;
   }
 
-  .row{
-    display: block;
-  }
-  .column{
-    flex: none;
-  }
-
   ul.pcUl{
     font-size: 15px;
   }
@@ -146,6 +139,10 @@ body{
   #help{
     font-size: 16px;
   }
+
+  .column{
+    flex-direction: column; 
+   }
 
   .responsive{
     max-width: 250px;
@@ -238,6 +235,7 @@ a .pcUl{
 
 .row{
   display: flex;
+  flex-wrap: wrap;
   border-radius: 5px;
   margin: auto;
   padding: 5px 5px 5px 5px;
