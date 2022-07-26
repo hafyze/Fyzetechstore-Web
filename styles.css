@@ -285,6 +285,8 @@ a .pcUl{
 
 
 .responsive{
+  width: 300px;
+  height: auto;
 }
 
 ul.pcUl{
@@ -370,7 +372,7 @@ form u{
 }
 
 #student_pc img{
-  width: 70%;
+  width: 300px;
 }
 
 #student_pc h1{
