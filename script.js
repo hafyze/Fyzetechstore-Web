@@ -1,6 +1,6 @@
 //TOPNAV icon
 // Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
+
 function myFunction() {
 var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
@@ -8,10 +8,4 @@ var x = document.getElementById("myTopnav");
      } else {
      x.className = "topnav";
      }
-}
-
-
-myFunction = document.getElementById("footer")
-{
-    
 }
