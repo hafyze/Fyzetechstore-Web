@@ -41,7 +41,7 @@
     
     <div class="cpu-select">
         <p>CPU:</p>
-        <select  id="cpu" name="cpu" onchange="pcPrice()">
+        <select  id="cpu" name="CPU" onchange="pcPrice()">
           <option value="0">Select CPU:</option>
           <option value="490">Ryzen 3 3200G&nbsp;- RM490</option>
           <option value="430">Ryzen 3 4100 &nbsp;&nbsp; - RM430</option>
@@ -54,7 +54,7 @@
         
     <div class="gpu-select">
         <p>GPU:</p>
-        <select id="gpu" name="gpu" onchange="pcPrice()">
+        <select id="gpu" name="GPU" onchange="pcPrice()">
             <option value="0">Select GPU:</option>
             <option value="841">MSI RX 6500XT Mech  &nbsp;&nbsp; - RM841</option>
             <option value="930">Zotac GTX 1650 Super &nbsp;&nbsp; - RM930</option>
@@ -69,7 +69,7 @@
 
     <div class="mobo-select">
         <p>Motherboard:</p>
-        <select id="mobo" name="mobo" onchange="pcPrice()">
+        <select id="mobo" name="Motherboard" onchange="pcPrice()">
             <option value="0">Select Motherboard:</option>
             <option value="199">ASRock A320m-DVS R4.0 - RM199</option>
             <option value="219">MSI A320m A-Pro - RM219</option>
@@ -85,7 +85,7 @@
 
     <div class="ram-select">
         <p>RAM:</p>
-        <select id="ram" name="ram" onchange="pcPrice()">
+        <select id="ram" name="RAM" onchange="pcPrice()">
             <option value="0">Select RAM:</option>
             <option value="150">Adata XPG RGB 8GB 3200MHz  - RM150</option>
             <option value="240">Kingston Fury 8GB(4GBx2) 3200MHz - RM240</option>
@@ -96,7 +96,7 @@
 
     <div class="storage-select">
         <p>Storage:</p>
-        <select id="storage" name="storage" onchange="pcPrice()">
+        <select id="storage" name="Storage" onchange="pcPrice()">
             <option value="0">Select Storage:</option>
             <option value="70">2.5" 120GB SSD - RM70</option>
             <option value="100">2.5" 240GB SSD - RM100</option>
@@ -107,7 +107,7 @@
             <option value="179">M.2 500GB SSD - RM179</option>
             <option value="329">M.2 1TB SSD - RM329</option>
         </select>
-        <select id="storage2" name="storage2" onchange="pcPrice()">
+        <select id="storage2" name="Storage 2" onchange="pcPrice()">
             <option value="0">Select Storage:</option>
             <option value="0">No second storage</option>
             <option value="70">2.5" 120GB SSD - RM70</option>
@@ -119,7 +119,7 @@
             <option value="179">M.2 500GB SSD - RM179</option>
             <option value="329">M.2 1TB SSD - RM329</option>
         </select>
-        <select id="storage3" name="storage3" onchange="pcPrice()">
+        <select id="storage3" name="Storage 3" onchange="pcPrice()">
             <option value="0">Select Storage:</option>
             <option value="0">No third storage</option>
             <option value="70">2.5" 120GB SSD - RM70</option>
@@ -135,7 +135,7 @@
 
     <div class="casing-select">
         <p>Casing:</p>
-        <select id="casing" name="casing" onchange="pcPrice()">
+        <select id="casing" name="Case" onchange="pcPrice()">
             <option value="0">Select Casing:</option>
             <option value="159">Deepcool Matrexx 40 MATX Black - RM159</option>
             <option value="149">Montech Air 100 Lite MATX Black/White - RM149</option>
@@ -151,7 +151,7 @@
 
     <div class="psu-select">
         <p>Power Supply Unit:</p>
-        <select id="psu" name="psu" onchange="pcPrice()">
+        <select id="psu" name="PSU" onchange="pcPrice()">
             <option value="0">Select PSU:</option>
             <option value="160">Aigo GP550 550W 80+Bronze NM - RM160</option>
             <option value="170">Aigo GP650 650W 80+Bronze NM - RM170</option>
@@ -164,7 +164,7 @@
 
     <div class="cpu-select">
         <p>CPU Cooler:</p>
-        <select id="cpuCooler" name="cpuCooler" onchange="pcPrice()">
+        <select id="cpuCooler" name="Cpu Cooler" onchange="pcPrice()">
             <option value="0">Select Cooler:</option>
             <option value="0" style="text-align: center;">AIR COOLER</option>
             <option value="0">CPU Stock Cooler - RM0</option>
@@ -181,10 +181,69 @@
     </div>
     <br>
     
-    <h4 id="parts-price">Parts Price: <span id="partsPrice">RM 0</span></h4>
+    <h4>Parts List</h4>
+    <table>
+        <tr>
+            <th>Component</th>
+            <th>Selection</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <th><span id="cpuComponent"></span></th>
+            <th><span id="cpuName"></span></th>
+            <th><span id="cpuPrice"></span></th>
+        </tr>
+        <tr>
+            <th><span id="gpuComponent"></span></th>
+            <th><span id="gpuName"></span></th>
+            <th><span id="gpuPrice"></span></th>
+        </tr>
+        <tr>
+            <th><span id="moboComponent"></span></th>
+            <th><span id="moboName"></span></th>
+            <th><span id="moboPrice"></span></th>
+        </tr>
+        <tr>
+            <th><span id="ramComponent"></span></th>
+            <th><span id="ramName"></span></th>
+            <th><span id="ramPrice"></span></th>
+        </tr>
+        <tr>
+            <th><span id="storageComponent"></span></th>
+            <th><span id="storageName"></span></th>
+            <th><span id="storagePrice"></span></th>
+        </tr>
+        <tr>
+            <th><span id="storageComponent2"></span></th>
+            <th><span id="storageName2"></span></th>
+            <th><span id="storagePrice2"></span></th>
+        </tr>
+        <tr>
+            <th><span id="storageComponent3"></span></th>
+            <th><span id="storageName3"></span></th>
+            <th><span id="storagePrice3"></span></th>
+        </tr>
+        <tr>
+            <th><span id="caseComponent"></span></th>
+            <th><span id="caseName"></span></th>
+            <th><span id="casePrice"></span></th>
+        </tr>
+        <tr>
+            <th><span id="psuComponent"></span></th>
+            <th><span id="psuName"></span></th>
+            <th><span id="psuPrice"></span></th>
+        </tr>
+        <tr>
+            <th><span id="coolerComponent"></span></th>
+            <th><span id="coolerName"></span></th>
+            <th><span id="coolerPrice"></span></th>
+        </tr>
+    </table>
+
+    <h4 id="parts-price"><b>Parts Price: <span id="partsPrice">RM 0</span></b></h4>
     <hr style="border: 1px solid white; width: 50%">
     <p>Installation Fee: RM200</p>
-    <h4>Total Price: <span id="totalPrice">RM 200</span></h4>
+    <h4><b>Total Price: <span id="totalPrice">RM 200</span></b></h4>
     <hr style="border: 1px solid white; width: 50%">
 
     <h5><i class="fa-solid fa-triangle-exclamation"></i>Note <i class="fa-solid fa-triangle-exclamation"></i></h5>
