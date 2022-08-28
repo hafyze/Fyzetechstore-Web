@@ -84,15 +84,13 @@ function display(cpu, gpu, mobo, ram, storage, storage2, storage3, casing, psu, 
     //Setting name for cpu
     if(cpu == 0){
         document.getElementById("cpuName").innerHTML = "Did Not pick";
-    }else if(cpu == 490){
+    }else if(cpu == 470){
         document.getElementById("cpuName").innerHTML = "Ryzen 3 3200G";
-    }else if(cpu == 430){
-        document.getElementById("cpuName").innerHTML = "Ryzen 3 4100";
-    }else if(cpu == 650){
+    }else if(cpu == 600){
         document.getElementById("cpuName").innerHTML = "Ryzen 5 3600";
-    }else if(cpu == 880){
+    }else if(cpu == 850){
         document.getElementById("cpuName").innerHTML = "Ryzen 5 5600";
-    }else if(cpu == 800){
+    }else if(cpu == 749){
         document.getElementById("cpuName").innerHTML = "Ryzen 5 5600G";
     }else if(cpu == 1950){
         document.getElementById("cpuName").innerHTML = "Ryzen 9 5900X";
@@ -101,36 +99,54 @@ function display(cpu, gpu, mobo, ram, storage, storage2, storage3, casing, psu, 
     //Setting name for gpu
     if(gpu == 0){
         document.getElementById("gpuName").innerHTML = "Integrated Graphics";
+    }else if(gpu == 799){
+        document.getElementById("gpuName").innerHTML = "Colorful GTX1650 NB";
     }else if(gpu == 841){
         document.getElementById("gpuName").innerHTML = "MSI RX 6500XT Mech";
-    }else if(gpu == 930){
+    }else if(gpu == 929){
         document.getElementById("gpuName").innerHTML = "Zotac GTX 1650 Super";
+    }else if(gpu == 999){
+        document.getElementById("gpuName").innerHTML = "Colorful GTX1660Super NB";
     }else if(gpu == 1009){
         document.getElementById("gpuName").innerHTML = "Gigabyte GTX 1660 D5";
-    }else if(gpu == 1509){
+    }else if(gpu == 1359){
+        document.getElementById("gpuName").innerHTML = "Colorful RTX 3050 NB";
+    }else if(gpu == 1499){
         document.getElementById("gpuName").innerHTML = "Colorful RTX 3050 Ultra";
     }else if(gpu == 1659){
-        document.getElementById("gpuName").innerHTML = "Galax RTX 3060 LHR";
-    }else if(gpu == 1275){
-        document.getElementById("gpuName").innerHTML = "ASRock RX 6600 D";
-    }else if(gpu == 2509){
+        document.getElementById("gpuName").innerHTML = "Colorful RTX 3060 NB";
+    }else if(gpu == 1179){
+        document.getElementById("gpuName").innerHTML = "ASRock RX 6600 Challenger";
+    }else if(gpu == 1499){
+        document.getElementById("gpuName").innerHTML = "ASRock RX 6600XT Challenger";
+    }else if(gpu == 1899){
+        document.getElementById("gpuName").innerHTML = "Sapphire RX 6700XT";
+    }else if(gpu == 2459){
+        document.getElementById("gpuName").innerHTML = "Colorful RTX 3070 NB";
+    }else if(gpu == 2489){
         document.getElementById("gpuName").innerHTML = "Palit RTX 3070ti Pro";
+    }else if(gpu == 3089){
+        document.getElementById("gpuName").innerHTML = "Colorful RTX 3070Ti Ultra";
     }else if(gpu == 3459){
-        document.getElementById("gpuName").innerHTML = "ASUS TUF RTX 3080 V2";
+        document.getElementById("gpuName").innerHTML = "Gigabyte RTX 3080 Vision";
+    }else if(gpu == 3409){
+        document.getElementById("gpuName").innerHTML = "MSI RX 6800XT Gaming Z Trio";
     }
     
     //Setting name for mobo
     if(mobo == 199){
         document.getElementById("moboName").innerHTML = "ASRock A320m-DVS R4.0";
-    }else if(mobo == 219){
+    }else if(mobo == 209){
         document.getElementById("moboName").innerHTML = "MSI A320m A-Pro";
     }else if(mobo == 309){
         document.getElementById("moboName").innerHTML = "MSI B450M A-Pro Max";
+    }else if(mobo == 349){
+        document.getElementById("moboName").innerHTML = "Asus Prime B550M-A";
     }else if(mobo == 409){
         document.getElementById("moboName").innerHTML = "ASRock B450m Steel Legend";
     }else if(mobo == 380){
         document.getElementById("moboName").innerHTML = "MSI B550m Pro-VDH";
-    }else if(mobo == 480){
+    }else if(mobo == 489){
         document.getElementById("moboName").innerHTML = "MSI B550m Pro-VDH Wifi";
     }else if(mobo == 700){
         document.getElementById("moboName").innerHTML = "Gigabyte Aorus B550 Elite";
@@ -141,13 +157,19 @@ function display(cpu, gpu, mobo, ram, storage, storage2, storage3, casing, psu, 
     }
     
     //Setting name for ram
-    if(ram == 150){
+    if(ram == 135){
+        document.getElementById("ramName").innerHTML = "Kingston Fury 8GB 3200MHz";
+    }else if(ram == 150){
         document.getElementById("ramName").innerHTML = "Adata XPG RGB 8GB 3200MHz";
     }else if(ram == 240){
         document.getElementById("ramName").innerHTML = "Kingston Fury 8GB(4GBx2) 3200MHz";
     }else if(ram == 270){
         document.getElementById("ramName").innerHTML = "Kingston Fury 16GB(8GBx2) 3200MHz";
-    }else if(ram == 315){
+    }else if(ram == 489){
+        document.getElementById("ramName").innerHTML = "Kingston Fury 32GB(8GBx4) 3200MHz";
+    }else if(ram == 300){
+        document.getElementById("ramName").innerHTML = "Adata XPG RGB 16GB(8GBx2) 3200MHz";
+    }else if(ram == 589){
         document.getElementById("ramName").innerHTML = "Adata XPG RGB 16GB(8GBx2) 3200MHz";
     }
 
@@ -251,6 +273,8 @@ function display(cpu, gpu, mobo, ram, storage, storage2, storage3, casing, psu, 
         document.getElementById("coolerName").innerHTML = "Stock Cooler";
     }else if(cpuCooler == 80){
         document.getElementById("coolerName").innerHTML = "Deepcool Gammaxx 400XT White";
+    }else if(cpuCooler == 83){
+        document.getElementById("coolerName").innerHTML = "ID-Cooling SE-224-XT Black";
     }else if(cpuCooler == 124){
         document.getElementById("coolerName").innerHTML = "Deepcool AK400 Black/White";
     }else if(cpuCooler == 374){
