@@ -201,3 +201,13 @@ ul.myUL {
   display: inline-block;
   text-align: left;
 }
+
+.small-logo{
+  margin: 10px 10px 10px 10px;
+  width: 140px;
+}
+
+#amd-logo{
+  
+  background-color: #ddd;
+}

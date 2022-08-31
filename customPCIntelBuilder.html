@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" 
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">    <script src="script.js"></script>
+    
+    
+    <link rel="stylesheet" href="customPCBuild.css">
+    <script src="./js/customPCBuild.js"></script>
+    <script src="./js/script.js"></script>
+
+    <title>FyzeTechStore Website</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/pc-icon.png">
+</head>
+<header class ="header" id="myHeader">
+    <nav>
+        <a href="#home" class="header_logo">
+            <h1>FyzeTechStore</h1>&#169
+        </a>
+
+        <div class="topnav" id="myTopnav">
+            <a href="#home" class="active"><i class="fa fa-fw fa-home"></i>Home</a>
+            <a href="customPCRyzenBuilder.html"><i class="fa-solid fa-screwdriver-wrench"></i>Ryzen Custom Build</a>
+            <a href="#help" class="split"><i class="fa fa-fw fa-search"></i>Help</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+    </nav>
+</header>
+<h1 style="border: 3px solid red; border-radius: 8px; background-color:darkgoldenrod;">PAGE IS STILL ON WORKING</h1>
+<body>
+    <h1><img class="small-logo" src="./images/intel_logo.png"> PC Builder </h1>
+    <p><i class="fa-solid fa-sack-dollar"></i>Build a PC based on your budget</p>
+    
+    <div class="cpu-select">
+        <p>CPU:</p>
+        <select  id="cpu" name="CPU" onchange="pcPrice()">
+          <option value="0">Select CPU:</option>
+          <option value="470">Ryzen 3 3200G&nbsp;- RM470</option>
+        </select>
+    </div>
+        
+    <div class="gpu-select">
+        <p>GPU:</p>
+        <select id="gpu" name="GPU" onchange="pcPrice()">
+            <option value="0">Select GPU:</option>
+            <option value="841">MSI RX 6500XT Mech  &nbsp;&nbsp; - RM841</option>
+            <option value="799">Colorful GTX1650 NB - RM799</option>
+            <option value="929">Zotac GTX 1650 Super &nbsp;&nbsp; - RM929</option>
+            <option value="999">Colorful GTX 1660Super NB - RM999</option>
+            <option value="1009">Gigabyte GTX 1660 D5 &nbsp;&nbsp;&nbsp; - RM1009</option>
+            <option value="1359">Colorful RTX 3050 NB - RM 1359</option>
+            <option value="1499">Colorful RTX 3050 Ultra &nbsp; - RM1499</option>
+            <option value="1659">Colorful RTX 3060 NB &nbsp;&nbsp;&nbsp; - RM1659</option>
+            <option value="1179">ASRock RX 6600 Challenger &nbsp;&nbsp;&nbsp; - RM1179</option>
+            <option value="1499">ASRock RX 6600XT Challenger &nbsp;&nbsp;&nbsp; - RM1499</option>
+            <option value="2459">Colorful RTX 3070 NB - RM2459</option>
+            <option value="1899">Sapphire Pulse RX6700XT - RM1899</option>
+            <option value="3089">Colorful RTX 3070Ti Ultra - RM3089</option>
+            <option value="2489">Palit RTX 3070ti Pro&nbsp;&nbsp;&nbsp;- RM2489</option>
+            <option value="3459">Gigabyte RTX 3080 Vision - RM 3459</option>
+            <option value="3409">MSI RX 6800XT Z Trio - RM3409</option>
+        </select>
+    </div>
+
+    <div class="mobo-select">
+        <p>Motherboard:</p>
+        <select id="mobo" name="Motherboard" onchange="pcPrice()">
+            <option value="0">Select Motherboard:</option>
+            <option value="199">ASRock A320m-DVS R4.0 - RM199</option>
+            <option value="209">MSI A320m A-Pro - RM209</option>
+            <option value="309">MSI B450M A-Pro Max - RM309</option>
+            <option value="349">Asus Prime B550M-A - RM349</option>
+            <option value="409">ASRock B450m Steel Legend - RM409</option>
+            <option value="380">MSI B550m Pro-VDH &nbsp;&nbsp; - RM380</option>
+            <option value="489">MSI B550m Pro-VDH Wifi &nbsp;- RM489</option>
+            <option value="700">Gigabyte Aorus B550 Elite - RM700</option>
+            <option value="899">Asus ROG Strix B550-A White - RM899</option>
+            <option value="1609">Asus ROG Strix X570-E - RM1609</option>
+        </select>
+    </div>
+
+    <div class="ram-select">
+        <p>RAM:</p>
+        <select id="ram" name="RAM" onchange="pcPrice()">
+            <option value="0">Select RAM:</option>
+            <option value="135">Kingston Fury 8GB 3200MHz  - RM135</option>
+            <option value="240">Kingston Fury 8GB(4GBx2) 3200MHz - RM240</option>
+            <option value="270">Kingston Fury 16GB(8GBx2) 3200MHz - RM270</option>
+            <option value="489">Kingston Fury 32GB(8GBx4) 3200MHz - RM489</option>
+            <option value="150">Adata XPG RGB 8GB 3200MHz  - RM150</option>
+            <option value="300">Adata XPG RGB 16GB(8GBx2) 3200MHz  - RM300</option>
+            <option value="589">Adata XPG RGB 16GB(8GBx4) 3200MHz  - RM589</option>
+        </select>
+    </div>
+
+    <div class="storage-select">
+        <p>Storage:</p>
+        <select id="storage" name="Storage" onchange="pcPrice()">
+            <option value="0">Select Storage:</option>
+            <option value="70">2.5" 120GB SSD - RM70</option>
+            <option value="100">2.5" 240GB SSD - RM100</option>
+            <option value="159">2.5" 480GB SSD - RM159</option>
+            <option value="165">2.5" 500GB SSD - RM165</option>
+            <option value="309">2.5" 1TB SSD - RM309</option>
+            <option value="129">M.2 250GB SSD - RM129</option>
+            <option value="179">M.2 500GB SSD - RM179</option>
+            <option value="329">M.2 1TB SSD - RM329</option>
+        </select>
+        <select id="storage2" name="Storage 2" onchange="pcPrice()">
+            <option value="0">Select Storage:</option>
+            <option value="0">No second storage</option>
+            <option value="70">2.5" 120GB SSD - RM70</option>
+            <option value="100">2.5" 240GB SSD - RM100</option>
+            <option value="159">2.5" 480GB SSD - RM159</option>
+            <option value="165">2.5" 500GB SSD - RM165</option>
+            <option value="309">2.5" 1TB SSD - RM309</option>
+            <option value="129">M.2 250GB SSD - RM129</option>
+            <option value="179">M.2 500GB SSD - RM179</option>
+            <option value="329">M.2 1TB SSD - RM329</option>
+        </select>
+        <select id="storage3" name="Storage 3" onchange="pcPrice()">
+            <option value="0">Select Storage:</option>
+            <option value="0">No third storage</option>
+            <option value="70">2.5" 120GB SSD - RM70</option>
+            <option value="100">2.5" 240GB SSD - RM100</option>
+            <option value="159">2.5" 480GB SSD - RM159</option>
+            <option value="165">2.5" 500GB SSD - RM165</option>
+            <option value="309">2.5" 1TB SSD - RM309</option>
+            <option value="129">M.2 250GB SSD - RM129</option>
+            <option value="179">M.2 500GB SSD - RM179</option>
+            <option value="329">M.2 1TB SSD - RM329</option>
+        </select>
+    </div>
+
+    <div class="casing-select">
+        <p>Casing:</p>
+        <select id="casing" name="Case" onchange="pcPrice()">
+            <option value="0">Select Casing:</option>
+            <option value="159">Deepcool Matrexx 40 MATX Black - RM159</option>
+            <option value="149">Montech Air 100 Lite MATX Black/White - RM149</option>
+            <option value="169">Tecware Flatline MATX Black/White - RM169</option>
+            <option value="209">Tecware Nexus Air M ARGB MATX Black/White - RM209</option>
+            <option value="209">Montech Air 100 ARGB MATX Black/White - RM209</option>
+            <option value="229">Tecware Neo ARGB ATX Black/White - RM229 </option>
+            <option value="309">Phanteks Eclipse P360A ATX Black/White - RM309</option>
+            <option value="349">Phanteks Eclipse P400A ARGB ATX - RM349</option>
+            <option value="529">Lian Li O11 Dynamic ATX Black/White - RM529</option>
+        </select>
+    </div>
+
+    <div class="psu-select">
+        <p>Power Supply Unit:</p>
+        <select id="psu" name="PSU" onchange="pcPrice()">
+            <option value="0">Select PSU:</option>
+            <option value="160">Aigo GP550 550W 80+Bronze NM - RM160</option>
+            <option value="170">Aigo GP650 650W 80+Bronze NM - RM170</option>
+            <option value="299">Corsair CV750 750W 80+Bronze NM - RM299</option>
+            <option value="199">1STPlayer DK PS-600AX 600W 80+Bronze FM- RM199</option>
+            <option value="469">Thermaltake Toughpower GF750w 80+Gold FM - RM469</option>
+            <option value="779">Asus ROG Strix 850W 80+Gold FM - RM779</option>
+        </select>
+    </div>
+
+    <div class="cpu-select">
+        <p>CPU Cooler:</p>
+        <select id="cpuCooler" name="Cpu Cooler" onchange="pcPrice()">
+            <option value="0">Select Cooler:</option>
+            <option value="0" style="text-align: center;">AIR COOLER</option>
+            <option value="0">CPU Stock Cooler - RM0</option>
+            <option value="80">Deepcool Gammaxx 400XT White - RM80</option>
+            <option value="83">ID-Cooling SE-224-XT Black - RM83</option>
+            <option value="124">Deepcool AK400 Black/White - RM124</option>
+            <option value="374">Noctua NH-U9S Black - RM374</option>
+            <option value="0" style="text-align: center;">LIQUID COOLER</option>
+            <option value="194">ID-Cooling Frostflow X 240 - RM194</option>
+            <option value="204">ID-Cooling Frostflow 240XT Black - RM204</option>
+            <option value="229">ID-Cooling Frostflow 240XT Snow Edition - RM229</option>
+            <option value="1049">NZXT Kraken Z53 RGB White 240mm - RM 1049</option>
+            <option value="999">Asus ROG Ryujin II 240mm - RM 999</option>            
+        </select>
+    </div>
+    <br>
+    
+    <h4>Parts List</h4>
+    <table>
+        <tr>
+            <th>Component</th>
+            <th>Selection</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <th><span id="cpuComponent"></span></th>
+            <th><span id="cpuName"></span></th>
+            <th><span id="cpuPrice"></span></th>
+        </tr>
+        <tr>
+            <th><span id="gpuComponent"></span></th>
+            <th><span id="gpuName"></span></th>
+            <th><span id="gpuPrice"></span></th>
+        </tr>
+        <tr>
+            <th><span id="moboComponent"></span></th>
+            <th><span id="moboName"></span></th>
+            <th><span id="moboPrice"></span></th>
+        </tr>
+        <tr>
+            <th><span id="ramComponent"></span></th>
+            <th><span id="ramName"></span></th>
+            <th><span id="ramPrice"></span></th>
+        </tr>
+        <tr>
+            <th><span id="storageComponent"></span></th>
+            <th><span id="storageName"></span></th>
+            <th><span id="storagePrice"></span></th>
+        </tr>
+        <tr>
+            <th><span id="storageComponent2"></span></th>
+            <th><span id="storageName2"></span></th>
+            <th><span id="storagePrice2"></span></th>
+        </tr>
+        <tr>
+            <th><span id="storageComponent3"></span></th>
+            <th><span id="storageName3"></span></th>
+            <th><span id="storagePrice3"></span></th>
+        </tr>
+        <tr>
+            <th><span id="caseComponent"></span></th>
+            <th><span id="caseName"></span></th>
+            <th><span id="casePrice"></span></th>
+        </tr>
+        <tr>
+            <th><span id="psuComponent"></span></th>
+            <th><span id="psuName"></span></th>
+            <th><span id="psuPrice"></span></th>
+        </tr>
+        <tr>
+            <th><span id="coolerComponent"></span></th>
+            <th><span id="coolerName"></span></th>
+            <th><span id="coolerPrice"></span></th>
+        </tr>
+    </table>
+
+    <h4 id="parts-price"><b>Parts Price: <span id="partsPrice">RM 0</span></b></h4>
+    <hr style="border: 1px solid white; width: 50%">
+    <p>Installation Fee: RM200</p>
+    <h4><b>Total Price: <span id="totalPrice">RM 200</span></b></h4>
+    <hr style="border: 1px solid white; width: 50%">
+
+    <h5><i class="fa-solid fa-triangle-exclamation"></i>Note <i class="fa-solid fa-triangle-exclamation"></i></h5>
+    <div class="container">
+        <ul class="myUL">
+            <li>Ryzen 3 3200G is not compatible with B550 Motherboards</li>
+            <li>Ryzen 5 5600G is not compatible with A320 Motherboards</li>
+            <li>Ryzen 9 5900X does not come with a stock cooler</li>
+            <li>1 Storage is enough for a PC system</li>
+        </ul>
+    </div>
+</body>
+
+<footer>
+    
+</footer>
+</html>
